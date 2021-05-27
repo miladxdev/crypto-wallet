@@ -5,25 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Cryptocurrency</title>
   </head>
   <body>
     <div class="wallet">
       <header>
-        <div class="user"></div>
-        <div class="balance-container">
-          <div class="balance-title">balance</div>
-          <div class="balance">450'000.91$</div>
-          <div class="balance-title">85.252.11 BGP</div>
+        <div class="menu">
+          <div class="menu-icon"><i class="fa fa-user"></i></div>
+          <div class="title">کیف پول</div>
+          <div class="menu-icon"><i class="fa fa-bars"></i></div>
+        </div>
+
+        <div class="balance--">
+          <div class="balance-title">موجودی حساب</div>
+          <div class="balance">4'540'230 <small>IRT</small></div>
         </div>
       </header>
-      <div class="crypto--">
-        <div class="crypto"></div>
-        <div class="crypto"></div>
-        <div class="crypto"></div>
-        <div class="crypto"></div>
+
+      <div class="crypto-container">
+        <div class="crypto">
+          <span>نام</span>
+        </div>
+        <div class="crypto">
+          <div class="crypto-icon">
+            <img src="img/icon/BTC.png" alt="" />
+            <div class="crypto-name">
+              <span class="crypto-symbol">BTC</span>
+              <small class="crypto-fullname">بیت کوین</small>
+            </div>
+          </div>
+          <img class="graph" src="btc-graph.png" alt="" />
+        </div>
+
+        <div class="crypto">
+          <div class="crypto-icon">
+            <img src="img/icon/ETH.png" alt="" />
+
+            <div class="crypto-name">
+              <span class="crypto-symbol">ETH</span>
+              <small class="crypto-fullname">اتریوم</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="crypto">
+          <div class="crypto-icon">
+            <img src="img/icon/DOGE.png" alt="" />
+
+            <div class="crypto-name">
+              <span class="crypto-symbol">DOGE</span>
+              <small class="crypto-fullname">دوج کوین</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="crypto">
+          <div class="crypto-icon">
+            <img src="img/icon/USDT.png" " alt="" />
+
+            <div class="crypto-name">
+              <span class="crypto-symbol">USDT</span>
+              <small class="crypto-fullname">تتر</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="crypto">
+          <div class="crypto-icon">
+            <img src="img/icon/TRX.png" alt="" />
+
+            <div class="crypto-name">
+              <span class="crypto-symbol">TRX</span>
+              <small class="crypto-fullname">ترون</small>
+            </div>
+          </div>
+        </div> -->
       </div>
-      <div class="footer"></div>
+
+      <div class="footer">
+        <i class="fa fa-credit-card"></i>
+        <i class="fa fa-chart-bar"></i>
+        <i class="fa fa-qrcode"></i>
+        <i class="fa fa-cog"></i>
+      </div>
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
   </body>

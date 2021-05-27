@@ -9,36 +9,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <title>Cryptocurrency</title>
+    <title>Crypto Currency</title>
   </head>
   <body>
     <div class="wallet">
+     
       <header>
         <div class="menu">
           <div class="menu-icon"><i class="fa fa-user"></i></div>
-          <div class="title">کیف پول</div>
+          <div class="title"><h4>کیف پول</h4></div>
           <div class="menu-icon"><i class="fa fa-bars"></i></div>
         </div>
 
-        <div class="balance--">
+        <div class="balance-container">
           <div class="balance-title">موجودی حساب</div>
-          <div class="balance">4'540'230 <small>IRT</small></div>
+          <div class="balance">4'540'230 <span style="font-size: 1rem;">IRT</span></div>
+          <div class="success" style="font-size: 18px">+204,310 (4.5%)</div>
         </div>
       </header>
-
+      
       <div class="crypto-container">
-        <div class="crypto">
-          <span>نام</span>
-        </div>
+        <div class="crypto-header">
+        <span style="width: 50px;">نام</span>
+        <span>قیمت</span>
+        <span>روزانه</span>
+        <span>هفتگی</span>
+      </div>
         <div class="crypto">
           <div class="crypto-icon">
             <img src="img/icon/BTC.png" alt="" />
             <div class="crypto-name">
-              <span class="crypto-symbol">BTC</span>
+              <span class="crypto-symbol"><b>BTC</b></span>
               <small class="crypto-fullname">بیت کوین</small>
             </div>
           </div>
-          <img class="graph" src="btc-graph.png" alt="" />
+          <div class="price">38,944 $</div>
+          <div class="change success">+1.24%</div>
+          <img class="graph" src="img/graph/btc.png" alt="" />
         </div>
 
         <div class="crypto">
@@ -46,10 +53,13 @@
             <img src="img/icon/ETH.png" alt="" />
 
             <div class="crypto-name">
-              <span class="crypto-symbol">ETH</span>
+              <span class="crypto-symbol"><b>ETH</b></span>
               <small class="crypto-fullname">اتریوم</small>
             </div>
           </div>
+          <div class="price">2,771.1 $</div>
+          <div class="change success">+2.85%</div>
+          <img class="graph" src="img/graph/eth.png" alt="" />
         </div>
 
         <div class="crypto">
@@ -57,42 +67,39 @@
             <img src="img/icon/DOGE.png" alt="" />
 
             <div class="crypto-name">
-              <span class="crypto-symbol">DOGE</span>
+              <span class="crypto-symbol"><b>DOGE</b></span>
               <small class="crypto-fullname">دوج کوین</small>
             </div>
           </div>
+          <div class="price">0.0805 $</div>
+          <div class="change warning">-0.21%</div>
+          <img class="graph" src="img/graph/doge.png" alt="" />
         </div>
 
         <div class="crypto">
           <div class="crypto-icon">
             <img src="img/icon/USDT.png" " alt="" />
-
             <div class="crypto-name">
-              <span class="crypto-symbol">USDT</span>
+              <span class="crypto-symbol"><b>USDT</b></span>
               <small class="crypto-fullname">تتر</small>
             </div>
           </div>
+          <div class="price">1 $</div>
+          <div class="change warning">-0.08%</div>
+          <img class="graph" src="img/graph/usdt.png" alt="" />
         </div>
-
-        <!-- <div class="crypto">
-          <div class="crypto-icon">
-            <img src="img/icon/TRX.png" alt="" />
-
-            <div class="crypto-name">
-              <span class="crypto-symbol">TRX</span>
-              <small class="crypto-fullname">ترون</small>
-            </div>
-          </div>
-        </div> -->
-      </div>
-
-      <div class="footer">
+    </div>
+    <div class="footer">
         <i class="fa fa-credit-card"></i>
         <i class="fa fa-chart-bar"></i>
         <i class="fa fa-qrcode"></i>
         <i class="fa fa-cog"></i>
       </div>
-    </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
   </body>
 </html>
+
+<!-- 
+   instagram: web.script
+   telegram: @webxscript
+   © 2021 Milad Gharibi. All rights reserved 
+ -->

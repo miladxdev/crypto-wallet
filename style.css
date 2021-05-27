@@ -3,15 +3,12 @@
   margin: 0;
   padding: 0;
 }
-:root {
-  --primary_dark: #0d1117;
-  --secondary_dark: #161b22;
-  --text-color-dark: #8abbff;
-}
+
 @font-face {
   font-family: nazanin;
   src: url(font/BNazanin.woff);
 }
+
 body {
   height: 100vh;
   display: flex;
@@ -20,28 +17,30 @@ body {
   background: #e7e7f5;
   color: #333;
   font-family: nazanin;
+  font-size: 18px;
 }
+
 .wallet {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  /* align-items: center; */
-  width: 350px;
-  height: 650px;
+  justify-content: space-between;
+  width: 370px;
+  height: 660px;
   padding: 0px;
   background-color: #fafafa;
   box-shadow: 2px 2px 16px #e1e1e4;
-  border-radius: 20px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 10px;
-  /* border: 1px solid red; */
+  padding: 20px 10px;
 }
-.balance-- {
+.balance-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,10 +49,10 @@ body {
   margin: 10px;
   height: 160px;
   background-image: linear-gradient(45deg, #f8caff69, #a5a1ce7e);
+  box-shadow: 0 4px 16px #f8caff8c;
   border-radius: 20px;
   color: #333;
   font-size: 40px;
-  /* background-image: linear-gradient(45deg, #335ca7, #5d43b1); */
 }
 
 .balance-title {
@@ -61,45 +60,57 @@ body {
   color: grey;
 }
 
-.crypto-container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around; */
-  /* align-items: center; */
-  /* height: 350px; */
-  /* border: 1px solid red; */
+.crypto-header {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .crypto {
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
   align-items: center;
   padding: 10px 10px;
-  /* border-radius: 10px; */
-  /* background-color: white; */
-  /* box-shadow: 0 0 8px #d7d7d7; */
-  /* color: var(--text-color-dark); */
   transition: background-color 0.2s;
-  /* border: 1px solid red; */
 }
 .crypto:hover {
   background-color: rgba(211, 211, 211, 0.5);
 }
 .crypto:not(:last-child) {
-  border-bottom: 1px solid rgb(230, 230, 230);
+  box-shadow: 0 16px 16px -15px rgba(221, 211, 221, 0.4);
 }
 .crypto img {
   display: inline-block;
   padding-right: 10px;
-  width: 40px;
+  width: 42px;
+}
+.crypto-icon {
+  width: 100px;
 }
 .crypto-name {
+  position: relative;
   display: inline-block;
+  top: 9px;
 }
 .crypto-fullname,
 .crypto-symbol {
   display: block;
+}
+.price {
+  width: 70px;
+}
+
+.success {
+  padding: 1px 8px;
+  background: rgba(0, 128, 0, 0.1);
+  color: green;
+  border-radius: 20px;
+}
+.warning {
+  padding: 1px 8px;
+  background: rgba(255, 0, 0, 0.1);
+  color: red;
+  border-radius: 20px;
 }
 .crypto .graph {
   display: block;
@@ -107,8 +118,14 @@ body {
 }
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 40px 10px;
-  background-color: bluegray;
+  padding: 20px 10px;
+  background-color: rgba(221, 211, 221, 0.8);
 }
+
+/*
+   instagram: web.script
+   telegram: @webxscript
+   © 2021 Milad Gharibi. All rights reserved 
+*/

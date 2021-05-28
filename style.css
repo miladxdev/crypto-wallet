@@ -15,9 +15,10 @@ body {
   justify-content: center;
   align-items: center;
   background: #e7e7f5;
-  color: #333;
+  color: rgb(51, 51, 60);
   font-family: nazanin;
   font-size: 18px;
+  background-size: 400%;
 }
 
 .wallet {
@@ -30,7 +31,7 @@ body {
   padding: 0px;
   background-color: #fafafa;
   box-shadow: 2px 2px 16px #e1e1e4;
-  border-radius: 30px;
+  border-radius: 40px;
   overflow: hidden;
 }
 
@@ -38,9 +39,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
+
 .balance-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +57,21 @@ body {
   color: #333;
   font-size: 40px;
 }
-
+.balance-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  background-image: url(img/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  opacity: 0.05;
+  z-index: 0;
+}
 .balance-title {
   font-size: 1rem;
   color: grey;
@@ -66,36 +83,45 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .crypto {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
   transition: background-color 0.2s;
+  cursor: pointer;
 }
+
 .crypto:hover {
   background-color: rgba(211, 211, 211, 0.5);
 }
+
 .crypto:not(:last-child) {
-  box-shadow: 0 16px 16px -15px rgba(221, 211, 221, 0.4);
+  border: 1px solid rgba(211, 211, 211, 0.3);
 }
+
 .crypto img {
   display: inline-block;
   padding-right: 10px;
   width: 42px;
 }
+
 .crypto-icon {
   width: 100px;
 }
+
 .crypto-name {
   position: relative;
   display: inline-block;
   top: 9px;
 }
+
 .crypto-fullname,
 .crypto-symbol {
   display: block;
 }
+
 .price {
   width: 70px;
 }
@@ -120,10 +146,33 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 10px;
-  background-color: rgba(221, 211, 221, 0.8);
+  padding: 10px 10px;
+  /* border-top: 1px solid rgba(210, 210, 220, 0.8); */
+  background-color: rgba(210, 210, 220, 0.2);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /* background: rgba(51, 51, 51, 0.1); */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn:hover {
+  background: rgba(51, 51, 55, 0.1);
 }
 
+i {
+  transition: 0.1s;
+}
+.btn:active i {
+  color: rgb(166, 98, 225);
+  text-shadow: 0 0 8px rgba(166, 98, 225, 0.2);
+  /* background: red; */
+}
 /*
    instagram: web.script
    telegram: @webxscript
